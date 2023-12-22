@@ -40,7 +40,7 @@ while true; do
     fi
 
     # Update last numbers array
-    last_numbers+=("$user_input")
+    last_numbers+=("$secret_number")
     if [ "${#last_numbers[@]}" -gt 10 ]; then
         unset 'last_numbers[0]'
         last_numbers=("${last_numbers[@]}")
